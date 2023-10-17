@@ -35,6 +35,7 @@ form
 
   button
     background transparent
+    box-shadow none
     height 48px
     width 48px
 
