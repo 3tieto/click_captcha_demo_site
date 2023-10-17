@@ -38,6 +38,7 @@ sign = (n)=>
       submit()
     else
       input_li[0].value = ''
+      input_li[0].focus()
       btn[1].className = ''
       btn[0].className = O
     return false
