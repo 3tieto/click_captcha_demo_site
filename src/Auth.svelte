@@ -91,6 +91,9 @@ h1
 form
   overflow hidden
 
+  input
+    font-weight 600
+
   &>button
     left -99px
     position absolute
