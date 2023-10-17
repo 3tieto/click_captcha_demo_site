@@ -24,7 +24,11 @@ onMount =>
         if i == @
           n = pos
           if i.classList.contains O
+            e.preventDefault()
             i.classList.remove O
+            if pos == 0
+              for i from input_li
+                i.value = ''
         else
           i.classList.add O
         focus()
