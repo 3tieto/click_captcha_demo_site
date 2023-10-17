@@ -1,0 +1,10 @@
+sh/*.js
+src/index.html
+env.sh
+dist/
+dist.*/
+.DS_Store
+node_modules/
+src/conf.js
+src/styl/svg.styl
+vite.config.js.timestamp-*.mjs
