@@ -13,14 +13,14 @@ sign = (n)=>
   form = tag0(box,'form')
   submit = =>
     form.classList.add ING
-    r = await captcha.auth(
-      [n].concat input_li.slice(0,2).map((i)=>i.value)
-    )
-    if r
+    try
+      console.log await captcha.auth(
+        [n].concat input_li.slice(0,2).map((i)=>i.value)
+      )
       box.close()
       alert 'done'
-      return
-    form.classList.remove ING
+    catch
+      form.classList.remove ING
     return
 
   btn[0].onclick = (e)->
